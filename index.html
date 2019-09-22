@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap_cosmo.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <p>Calculator</p>
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <div class="container">
+
+    <form>
+      <fieldset class="form-group" id="q1">
+        <div class="row">
+          <legend class="col-form-label col-sm-5 pt-0">To establish demolition cost, would you consider your kitchen to
+            be</legend>
+          <div class="col-sm-5">
+            <div class="form-check form-check-inline" id="q10">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" value="s" id="q11" value="option1">
+              <label class="form-check-label" for="q11">Small</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" value="m" id="q12" value="option2">
+              <label class="form-check-label" for="q12">Medium</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" value="l" id="q13" value="option2">
+              <label class="form-check-label" for="q13">Large</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row" id="q2">
+        <label class="col-sm-5 col-form-label">demolition costs</label>
+        <div class="col-sm-2">
+          <input id="q22" type="number" class="form-control">
+        </div>
+      </div>
+      <!-- 
+      <fieldset class="form-group" id="q3">
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-5 pt-0">Are you going to be replacing any drywall?</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q33" value="option1">
+            <label class="form-check-label" for="q33">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q34" value="option2">
+            <label class="form-check-label" for="q34">No</label>
+          </div>
+        </div>
+        <div class="form-group row" id="q4">
+          <label class="col-sm-5 col-form-label"> How many square feet? </label>
+          <div class="col-sm-2">
+            <input id="q3" type="number" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row" id="q5">
+          <legend class="col-form-label col-sm-5 pt-0">Just a few small patches</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q51" value="option1">
+            <label class="form-check-label" for="q51">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q52" value="option2">
+            <label class="form-check-label" for="q52">No</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <div class="form-group row" id="q6">
+          <legend class="col-form-label col-sm-5 pt-0">Will you be repainting your kitchen?</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q61" value="option1">
+            <label class="form-check-label" for="q61">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q62" value="option2">
+            <label class="form-check-label" for="q62">No</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group" id="q7">
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-5 pt-0">Will you be adding or moving any electrical or electrical
+            fixtures?(if they choose yes, it will take them to</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q71" value="option1">
+            <label class="form-check-label" for="q71">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q72" value="option2">
+            <label class="form-check-label" for="q72">No/Unsure</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group" id="q8">
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-5 pt-0">Will you be adding any new can lights, receptacles, or switches?
+          </legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q44" value="option1">
+            <label class="form-check-label" for="q44">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q45" value="option2">
+            <label class="form-check-label" for="q45">No/Unsure</label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label"> How many ?</label>
+        <div class="col-sm-2">
+          <input id="q1" type="number" class="form-control">
+        </div>
+      </div>
+
+      <fieldset class="form-group">
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-5 pt-0">Will you be adding new pendant lights??
+          </legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q44" value="option1">
+            <label class="form-check-label" for="q44">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q45" value="option2">
+            <label class="form-check-label" for="q45">No/Unsure</label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label"> How many ?</label>
+        <div class="col-sm-2">
+          <input id="q1" type="number" class="form-control">
+        </div>
+      </div>
+
+      <fieldset class="form-group">
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-5 pt-0">Are you going to relocate any plumbing?</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q44" value="option1">
+            <label class="form-check-label" for="q44">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q45" value="option2">
+            <label class="form-check-label" for="q45">No</label>
+          </div>
+        </div>
+      </fieldset>
+
+
+      <fieldset class="form-group">
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-5 pt-0">Are you going to have a new sink?</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q44" value="option1">
+            <label class="form-check-label" for="q44">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q45" value="option2">
+            <label class="form-check-label" for="q45">No</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-group">
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-5 pt-0">How about a new faucet?</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q44" value="option1">
+            <label class="form-check-label" for="q44">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q45" value="option2">
+            <label class="form-check-label" for="q45">No</label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label">What type of backplash are you going to have? (This will have numerous
+          picture options with check boxes) How many Square Feet ?</label>
+        <div class="col-sm-2">
+          <input id="q1" type="number" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label">What type of countertops are you going to have? (This will have numerous
+          picture options with check boxes) How many Square Feet ?</label>
+        <div class="col-sm-2">
+          <input id="q1" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label">Now let's pick out some cabinets. Here are your choices: (This will show
+          them pictures with these options: Low Quality RTA Cabinets Higher Quality RTA Cabinets Assembled Stock
+          Cabinets
+          Semi-Custom Custom High End Custom)</label>
+        <div class="col-sm-2">
+          <input id="q1" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label">How tall would you like your upper cabinets to be? (This will show
+          pictures with these options: 30" T Uppers 36" T Uppers 42" T Uppers )</label>
+        <div class="col-sm-2">
+          <input id="q1" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label">Moldings make a huge difference! What is your style? (This will show
+          these
+          options: No moldings Crown molding Crown molding and light rail The bells and whistles)</label>
+        <div class="col-sm-2">
+          <input id="q1" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label">How many linear feet of upper cabinets do you have?</label>
+        <div class="col-sm-2">
+          <input id="q1" type="number" class="form-control">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-5 pt-0">For your base cabinets, would you like</legend>
+        </div>
+        <div class="form-group row">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q44" value="option1">
+            <label class="form-check-label" for="q44">standard base cabinets (lower doors
+              and upper drawers)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q45" value="option2">
+            <label class="form-check-label" for="q45">A mixture of standard and all drawer bases</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q45" value="option2">
+            <label class="form-check-label" for="q45">Lots of Drawers and pullouts</label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label">How many linear feet of lower cabinets do you have?</label>
+        <div class="col-sm-2">
+          <input id="q1" type="text" class="form-control">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-5 pt-0">What type of floor is your home built with? concrete slab?
+          </legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q44" value="option1">
+            <label class="form-check-label" for="q44">wood</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="q45" value="option2">
+            <label class="form-check-label" for="q45">framed floor</label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label">You are almost done! We just need your flooring. What type of flooring
+          would you like? (About ten different options with pictures here)</label>
+        <div class="col-sm-2">
+          <input id="q1" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-5 col-form-label">How many square feet of flooring are you going to install?</label>
+        <div class="col-sm-2">
+          <input id="q1" type="number" class="form-control">
+        </div>
+      </div> -->
+      <button type="button" class="btn btn-primary btn-lg" id="calc">Caclulate</button>
+    </form>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
