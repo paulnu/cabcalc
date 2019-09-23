@@ -33,7 +33,12 @@
   {
     "id": "q4",
     "question": "Will you be adding or moving any electrical or electrical fixtures?",
-    "answer": "Yes/No/Unsure",
+    "answer": [
+      "Yes",
+      "No",
+      "Unsure"
+    ],
+    "show_subquestions_trigger": "Yes",
     "input_type": "radio",
     "subquestions": [
       {
@@ -43,6 +48,7 @@
           "Yes",
           "No"
         ],
+        "show_subquestions_trigger": "Yes",
         "input_type": "radio",
         "subquestions": [
           {
@@ -61,6 +67,7 @@
           "Yes",
           "No"
         ],
+        "show_subquestions_trigger": "Yes",
         "input_type": "radio",
         "subquestions": [
           {
@@ -143,7 +150,8 @@
     "id": "q13",
     "question": "How tall would you like your upper cabinets to be?",
     "answer": "30inch T Uppers/36inch T Uppers/42inch T Uppers",
-    "input_type": "check"
+    "input_type": "check",
+    "subquestions": []
   },
   {
     "id": "q14",

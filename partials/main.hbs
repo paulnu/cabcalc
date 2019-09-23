@@ -1,35 +1,34 @@
 {{#each questions}}
 {{id}}
-{{#isNumberType this}}
-{{> inumber}}
-{{/isNumberType}}
-{{#isTextType this}}
-{{> iradio}}
-{{/isTextType}}
-{{#isRadioType this}}
-{{> iradio}}
-{{/isRadioType}}
-{{#isCheckType this}}
-{{> icheck}}
-{{/isCheckType}}
+{{>question.item this}}
 {{!-- Subquestions level 1 --}}
-<h3>
-  Subquestions
-</h3>
+{{#areSubquestions this}}
+<h3> Subquestions level 1</h3>
 {{#each this.subquestions}}
 {{id}}
-{{#isNumberType this}}
-{{> inumber}}
-{{/isNumberType}}
-{{#isTextType this}}
-{{> iradio}}
-{{/isTextType}}
-{{#isRadioType this}}
-{{> iradio}}
-{{/isRadioType}}
-{{#isCheckType this}}
-{{> icheck}}
-{{/isCheckType}}
+{{>question.item this}}
+{{!-- Subquestions level 2 --}}
+{{#areSubquestions this}}
+<h3> Subquestions level 2</h3>
+{{#each this.subquestions}}
+{{id}}
+{{>question.item this}}
+{{!-- Subquestions level 3 --}}
+{{#areSubquestions this}}
+<h3> Subquestions level 3</h3>
+{{#each this.subquestions}}
+{{id}}
+{{>question.item this}}
 {{/each}}
+<h3> Subquestions level 3 end</h3>
+{{/areSubquestions}}
+{{!-- Subquestions level 3 end --}}
+{{/each}}
+<h3> Subquestions level 2 end</h3>
+{{/areSubquestions}}
+{{!-- Subquestions level 2 end --}}
+{{/each}}
+<h3> Subquestions level 1 end</h3>
+{{/areSubquestions}}
 {{!-- Subquestions level 1 end --}}
 {{/each}}
