@@ -162,7 +162,11 @@
   {
     "id": "q16",
     "question": "For your base cabinets, would you like?",
-    "answer": "standard base cabinets (lower doors and upper drawers)/A mixture of standard and all drawer bases/Lots of Drawers and pullouts",
+    "answer": [
+      "standard base cabinets (lower doors and upper drawers)",
+      "A mixture of standard and all drawer bases",
+      "Lots of Drawers and pullouts"
+    ],
     "input_type": "radio",
     "subquestions": []
   },
@@ -176,7 +180,11 @@
   {
     "id": "q18",
     "question": "What type of floor is your home built with?",
-    "answer": "concrete slab/wood/framed floor",
+    "answer": [
+      "concrete slab",
+      "wood",
+      "framed floor"
+    ],
     "input_type": "radio",
     "subquestions": []
   },

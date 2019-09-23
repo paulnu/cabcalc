@@ -4,7 +4,7 @@ $(() => {
   const hbs = Handlebars
   const src = $('#entry-template').html()
   const template = hbs.compile(src)
-  const partials = ['main', 'iradio', 'inumber', 'itext']
+  const partials = ['main', 'icheck', 'inumber', 'itext', 'iradio']
   const promises = []
 
   hbs.registerHelper('isNumberType', (data, options) => {
@@ -17,6 +17,10 @@ $(() => {
 
   hbs.registerHelper('isRadioType', (data, options) => {
     return data.input_type === 'radio' ? options.fn(data) : options.inverse(data)
+  })
+
+  hbs.registerHelper('isCheckType', (data, options) => {
+    return data.input_type === 'check' ? options.fn(data) : options.inverse(data)
   })
 
   partials.map((p) => {
@@ -47,9 +51,4 @@ $(() => {
         console.log("Request Failed: " + err)
       })
   )
-
-
-
-
-
 })

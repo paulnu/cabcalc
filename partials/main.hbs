@@ -1,4 +1,5 @@
 {{#each questions}}
+{{id}}
 {{#isNumberType this}}
 {{> inumber}}
 {{/isNumberType}}
@@ -8,4 +9,27 @@
 {{#isRadioType this}}
 {{> iradio}}
 {{/isRadioType}}
+{{#isCheckType this}}
+{{> icheck}}
+{{/isCheckType}}
+{{!-- Subquestions level 1 --}}
+<h3>
+  Subquestions
+</h3>
+{{#each this.subquestions}}
+{{id}}
+{{#isNumberType this}}
+{{> inumber}}
+{{/isNumberType}}
+{{#isTextType this}}
+{{> iradio}}
+{{/isTextType}}
+{{#isRadioType this}}
+{{> iradio}}
+{{/isRadioType}}
+{{#isCheckType this}}
+{{> icheck}}
+{{/isCheckType}}
+{{/each}}
+{{!-- Subquestions level 1 end --}}
 {{/each}}
