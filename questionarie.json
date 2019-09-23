@@ -2,21 +2,31 @@
   {
     "id": "q1",
     "question": "To establish general pricing, would you consider your kitchen to be",
-    "answer": "Small/Medium/Large",
+    "answer": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
     "input_type": "radio",
     "subquestions": []
   },
   {
     "id": "q2",
     "question": "Are you going to be replacing any drywall?",
-    "answer": "Yes/No",
+    "answer": [
+      "Yes",
+      "No"
+    ],
     "input_type": "radio",
     "subquestions": []
   },
   {
     "id": "q3",
     "question": "Will you be repainting your kitchen?",
-    "answer": "Yes/No",
+    "answer": [
+      "Yes",
+      "No"
+    ],
     "input_type": "radio",
     "subquestions": []
   },
@@ -29,7 +39,10 @@
       {
         "id": "q41",
         "question": "Will you be adding any new can lights, receptacles, or switches?",
-        "answer": "Yes/No",
+        "answer": [
+          "Yes",
+          "No"
+        ],
         "input_type": "radio",
         "subquestions": [
           {
@@ -44,7 +57,10 @@
       {
         "id": "q42",
         "question": "Will you be adding new pendant lights?",
-        "answer": "Yes/No",
+        "answer": [
+          "Yes",
+          "No"
+        ],
         "input_type": "radio",
         "subquestions": [
           {
@@ -61,21 +77,30 @@
   {
     "id": "q7",
     "question": "Are you going to relocate any plumbing?",
-    "answer": "Yes/No",
+    "answer": [
+      "Yes",
+      "No"
+    ],
     "input_type": "radio",
     "subquestions": []
   },
   {
     "id": "q8",
     "question": "Are you going to have a new sink",
-    "answer": "Yes/No",
+    "answer": [
+      "Yes",
+      "No"
+    ],
     "input_type": "radio",
     "subquestions": []
   },
   {
     "id": "q9",
     "question": "How about a new faucet?",
-    "answer": "Yes/No",
+    "answer": [
+      "Yes",
+      "No"
+    ],
     "input_type": "radio",
     "subquestions": []
   },

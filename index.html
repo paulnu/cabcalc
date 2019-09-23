@@ -7,21 +7,32 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="bootstrap_cosmo.min.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.2.0/handlebars.min.js"></script>
 </head>
 
 <body>
   <p>Calculator</p>
+  <div class=f"container">
+    <form id="calcForm">
+      <div id="content"></div>
+      <button type="button" class="btn btn-primary btn-lg" id="calc">Caclulate</button>
+    </form>
+  </div>
 
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-  <div class="container">
+  <script id="entry-template" type="text/x-handlebars-template">
+  <div class="entry">
+    {{> main}}
+  </div>
+  </div>
+  </script>
 
-    <form>
+  <!-- <div class="container">
+    <form id="calcForm">
       <fieldset class="form-group" id="q1">
         <div class="row">
           <legend class="col-form-label col-sm-5 pt-0">To establish demolition cost, would you consider your kitchen to
@@ -48,7 +59,6 @@
           <input id="q22" type="number" class="form-control">
         </div>
       </div>
-      <!-- 
       <fieldset class="form-group" id="q3">
         <div class="form-group row">
           <legend class="col-form-label col-sm-5 pt-0">Are you going to be replacing any drywall?</legend>
@@ -288,10 +298,10 @@
         <div class="col-sm-2">
           <input id="q1" type="number" class="form-control">
         </div>
-      </div> -->
+      </div>
       <button type="button" class="btn btn-primary btn-lg" id="calc">Caclulate</button>
     </form>
-  </div>
+  </div> -->
   <script type="module" src="main.js"></script>
 </body>
 

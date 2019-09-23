@@ -1,0 +1,11 @@
+{{#each questions}}
+{{#isNumberType this}}
+{{> inumber}}
+{{/isNumberType}}
+{{#isTextType this}}
+{{> iradio}}
+{{/isTextType}}
+{{#isRadioType this}}
+{{> iradio}}
+{{/isRadioType}}
+{{/each}}

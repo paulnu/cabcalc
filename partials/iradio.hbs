@@ -1,0 +1,13 @@
+<fieldset class="form-group" id="{{id}}">
+  <div class="row">
+    <legend class="col-form-label col-sm-5 pt-0">{{question}}</legend>
+    <div class="col-sm-5">
+      {{#each answer}}
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="radio_{{id}}" value="{{this}}">
+        <label class="form-check-label">{{this}}</label>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</fieldset>
