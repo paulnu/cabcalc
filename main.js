@@ -48,27 +48,19 @@ $(() => {
           questions: data
         })
         $('#content').html(content)
-        let subs = data.filter((i) => i.subquestions && i.subquestions.length > 0)
-        //let subs1 = subs.subquestions.filter((i) => i.subquestions && i.subquestions.length > 0)
-        subs.map((s) => {
-          // $(`input[name=radio_${s.id}]`).change((e) => {
-          //   console.log(e.target.value)
-          // })
-          // console.log(s.id, s.show_subquestions_trigger, s.subquestions)
-          s.subquestions.map((i) => toggleSubQuestions(i.id))
-          let subs1 = s.subquestions.filter((i) => i.subquestions && i.subquestions.length > 0)
-          subs1.map((s) => {
-            // console.log(s.id, s.show_subquestions_trigger)
-            s.subquestions.map((i) => toggleSubQuestions(i.id))
-            let subs2 = s.subquestions.filter((i) => i.subquestions && i.subquestions.length > 0)
-            subs2.map((s) => {
-              // console.log(s.id, s.show_subquestions_trigger)
-            })
-          })
+        $('.level-2, .level-3').hide()
+
+        $('#q4').on('click', (e) => {
+          let $this = $(e.currentTarget)
+          // console.log(t.value, t.id)
+          console.log($this.find('input[type=radio]:checked').val())
         })
+
         $('input[type=radio]').on('click', (e) => {
-          let t = e.target
-          console.log(t.value, t.id)
+          // let t = e.target
+          let $this = $(e.currentTarget)
+          console.log($this.attr('data-q4'))
+          // console.log(t.value, t.id)
         })
         // $('#calc').on('click', (e) => {
         //   let t = e.target

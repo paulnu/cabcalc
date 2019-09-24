@@ -1,6 +1,7 @@
 [
   {
     "id": "q1",
+    "level": "1",
     "question": "To establish general pricing, would you consider your kitchen to be",
     "answer": [
       "Small",
@@ -12,6 +13,7 @@
   },
   {
     "id": "q2",
+    "level": "1",
     "question": "Are you going to be replacing any drywall?",
     "answer": [
       "Yes",
@@ -22,6 +24,7 @@
   },
   {
     "id": "q3",
+    "level": "1",
     "question": "Will you be repainting your kitchen?",
     "answer": [
       "Yes",
@@ -32,6 +35,7 @@
   },
   {
     "id": "q4",
+    "level": "1",
     "question": "Will you be adding or moving any electrical or electrical fixtures?",
     "answer": [
       "Yes",
@@ -43,6 +47,7 @@
     "subquestions": [
       {
         "id": "q41",
+        "level": "2",
         "question": "Will you be adding any new can lights, receptacles, or switches?",
         "answer": [
           "Yes",
@@ -53,6 +58,7 @@
         "subquestions": [
           {
             "id": "q411",
+            "level": "3",
             "question": "How many?",
             "answer": "",
             "input_type": "number",
@@ -62,6 +68,7 @@
       },
       {
         "id": "q42",
+        "level": "2",
         "question": "Will you be adding new pendant lights?",
         "answer": [
           "Yes",
@@ -72,6 +79,7 @@
         "subquestions": [
           {
             "id": "q421",
+            "level": "3",
             "question": "How many?",
             "answer": "",
             "input_type": "number",
@@ -83,6 +91,7 @@
   },
   {
     "id": "q7",
+    "level": "1",
     "question": "Are you going to relocate any plumbing?",
     "answer": [
       "Yes",
@@ -93,6 +102,7 @@
   },
   {
     "id": "q8",
+    "level": "1",
     "question": "Are you going to have a new sink",
     "answer": [
       "Yes",
@@ -103,6 +113,7 @@
   },
   {
     "id": "q9",
+    "level": "1",
     "question": "How about a new faucet?",
     "answer": [
       "Yes",
@@ -113,6 +124,7 @@
   },
   {
     "id": "q10",
+    "level": "1",
     "question": "What type of backplash are you going to have?",
     "answer": "",
     "input_type": "check",
@@ -120,6 +132,7 @@
   },
   {
     "id": "q61",
+    "level": "1",
     "question": "How many Square Feet?",
     "answer": "",
     "input_type": "number",
@@ -127,6 +140,7 @@
   },
   {
     "id": "q11",
+    "level": "1",
     "question": "What type of countertops are you going to have?",
     "answer": "",
     "input_type": "check",
@@ -134,6 +148,7 @@
   },
   {
     "id": "q61",
+    "level": "1",
     "question": "How many Square Feet?",
     "answer": "",
     "input_type": "number",
@@ -141,6 +156,7 @@
   },
   {
     "id": "q12",
+    "level": "1",
     "question": "Now let's pick out some cabinets. Here are your choices:",
     "answer": "Low Quality RTA Cabinets/Higher Quality RTA Cabinets/Assembled Stock Cabinets/Semi-Custom/High End Custom",
     "input_type": "check",
@@ -148,6 +164,7 @@
   },
   {
     "id": "q13",
+    "level": "1",
     "question": "How tall would you like your upper cabinets to be?",
     "answer": "30inch T Uppers/36inch T Uppers/42inch T Uppers",
     "input_type": "check",
@@ -155,6 +172,7 @@
   },
   {
     "id": "q14",
+    "level": "1",
     "question": "Moldings make a huge difference! What is your style?",
     "answer": "No moldings/Crown molding/Crown molding and light rail/The bells and whistles",
     "input_type": "radio",
@@ -162,6 +180,7 @@
   },
   {
     "id": "q15",
+    "level": "1",
     "question": "How many linear feet of upper cabinets do you have?",
     "answer": "",
     "input_type": "number",
@@ -169,6 +188,7 @@
   },
   {
     "id": "q16",
+    "level": "1",
     "question": "For your base cabinets, would you like?",
     "answer": [
       "standard base cabinets (lower doors and upper drawers)",
@@ -180,6 +200,7 @@
   },
   {
     "id": "q17",
+    "level": "1",
     "question": "How many linear feet of lower cabinets do you have?",
     "answer": "",
     "input_type": "number",
@@ -187,6 +208,7 @@
   },
   {
     "id": "q18",
+    "level": "1",
     "question": "What type of floor is your home built with?",
     "answer": [
       "concrete slab",
@@ -198,6 +220,7 @@
   },
   {
     "id": "q19",
+    "level": "1",
     "question": "You are almost done! We just need your flooring. What type of flooring would you like? (About ten different options with pictures here)",
     "answer": "",
     "input_type": "check",
@@ -205,6 +228,7 @@
   },
   {
     "id": "q20",
+    "level": "1",
     "question": "How many square feet of flooring are you going to install?",
     "answer": "",
     "input_type": "number",
