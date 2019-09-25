@@ -33,14 +33,6 @@ $(() => {
     }, 'html'))
   })
 
-  function toggleSubQuestions(id) {
-    let el = $(`#${id}`)
-    // el.children('input[type=radio]').on('change', (e) => {
-    //   console.log(e.target.val())
-    // })
-    // el.children().hide()
-  }
-
   Promise.all(promises).then(
     $.getJSON("questionarie.json")
       .done((data) => {
@@ -48,20 +40,29 @@ $(() => {
           questions: data
         })
         $('#content').html(content)
-        $('.level-2, .level-3').hide()
+        $('.l2,l3').hide()
+        $('.l1').css('border', '1px solid blue')
+        $('.l2').css('border', '1px solid red')
+        $('.l3').css('border', '1px solid green')
 
-        $('#q4').on('click', (e) => {
+
+        $('div.level').on('click', (e) => {
+          e.stopPropagation()
+          console.log('clicked')
           let $this = $(e.currentTarget)
-          // console.log(t.value, t.id)
-          console.log($this.find('input[type=radio]:checked').val())
+          let toggleVal = $this.find('input[type=radio]:checked').val()
+          let toggleLevel = $this.children('.level').first()
+          toggleVal === 'Yes' ? toggleLevel.show() : toggleLevel.hide()
+          // let id = $this.attr('id')
+          // console.log($this.children().length)
         })
 
-        $('input[type=radio]').on('click', (e) => {
-          // let t = e.target
-          let $this = $(e.currentTarget)
-          console.log($this.attr('data-q4'))
-          // console.log(t.value, t.id)
-        })
+        // $('input[type=radio]').on('click', (e) => {
+        //   // let t = e.target
+        //   let $this = $(e.currentTarget)
+        //   console.log($this.attr('data-q4'))
+        //   // console.log(t.value, t.id)
+        // })
         // $('#calc').on('click', (e) => {
         //   let t = e.target
         //   console.log(t.id)

@@ -1,34 +1,19 @@
-{{#each questions}}
-{{id}}
-{{>question.item this}}
-{{!-- Subquestions level 1 --}}
-{{#areSubquestions this}}
-<h3> Subquestions level 1</h3>
-{{#each this.subquestions}}
-{{id}}
-{{>question.item this}}
-{{!-- Subquestions level 2 --}}
-{{#areSubquestions this}}
-<h3> Subquestions level 2</h3>
-{{#each this.subquestions}}
-{{id}}
-{{>question.item this}}
-{{!-- Subquestions level 3 --}}
-{{#areSubquestions this}}
-<h3> Subquestions level 3</h3>
-{{#each this.subquestions}}
-{{id}}
-{{>question.item this}}
-{{/each}}
-<h3> Subquestions level 3 end</h3>
-{{/areSubquestions}}
-{{!-- Subquestions level 3 end --}}
-{{/each}}
-<h3> Subquestions level 2 end</h3>
-{{/areSubquestions}}
-{{!-- Subquestions level 2 end --}}
-{{/each}}
-<h3> Subquestions level 1 end</h3>
-{{/areSubquestions}}
-{{!-- Subquestions level 1 end --}}
-{{/each}}
+<div class="level l1">
+  {{#each questions}}
+  {{>question.item this}}
+  {{#areSubquestions this}}
+  <div class="level l2">
+    {{#each this.subquestions}}
+    {{>question.item this}}
+    {{#areSubquestions this}}
+    <div class="level l3">
+      {{#each this.subquestions}}
+      {{>question.item this}}
+      {{/each}}
+    </div>
+    {{/areSubquestions}}
+    {{/each}}
+  </div>
+  {{/areSubquestions}}
+  {{/each}}
+</div>
