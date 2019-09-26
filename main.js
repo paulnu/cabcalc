@@ -27,6 +27,10 @@ $(() => {
     return data.subquestions && data.subquestions.length > 0 ? options.fn(data) : options.inverse(data)
   })
 
+  Handlebars.registerHelper('subids', (data) => {
+    return data.map(e => '#' + e.id).join(',')
+  })
+
   partials.map((p) => {
     promises.push($.get(`partials/${p}.hbs`, (data) => {
       hbs.registerPartial(p, data)
@@ -40,33 +44,25 @@ $(() => {
           questions: data
         })
         $('#content').html(content)
-        $('.l2,l3').hide()
+        $('input[data-subids]').each((i, e) => {
+          let ids = $(e).attr('data-subids')
+          $(ids).hide()
+        })
+
         $('.l1').css('border', '1px solid blue')
         $('.l2').css('border', '1px solid red')
         $('.l3').css('border', '1px solid green')
 
-
-        $('div.level').on('click', (e) => {
-          e.stopPropagation()
-          console.log('clicked')
+        $('input[data-subids]').on('click', (e) => {
           let $this = $(e.currentTarget)
-          let toggleVal = $this.find('input[type=radio]:checked').val()
-          let toggleLevel = $this.children('.level').first()
-          toggleVal === 'Yes' ? toggleLevel.show() : toggleLevel.hide()
-          // let id = $this.attr('id')
-          // console.log($this.children().length)
+          let ids = $this.attr('data-subids')
+          $this.val() === 'Yes' ? $(ids).show() : $(ids).hide()
         })
 
-        // $('input[type=radio]').on('click', (e) => {
-        //   // let t = e.target
-        //   let $this = $(e.currentTarget)
-        //   console.log($this.attr('data-q4'))
-        //   // console.log(t.value, t.id)
-        // })
-        // $('#calc').on('click', (e) => {
-        //   let t = e.target
-        //   console.log(t.id)
-        // })
+        $('#calc').on('click', (e) => {
+          let $this = $(e.currentTarget)
+          console.log($this.attr('id'))
+        })
       })
       .fail((jqxhr, textStatus, error) => {
         var err = textStatus + ", " + error

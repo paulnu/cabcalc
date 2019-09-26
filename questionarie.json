@@ -7,8 +7,7 @@
       "Medium",
       "Large"
     ],
-    "input_type": "radio",
-    "subquestions": []
+    "input_type": "radio"
   },
   {
     "id": "q2",
@@ -17,8 +16,7 @@
       "Yes",
       "No"
     ],
-    "input_type": "radio",
-    "subquestions": []
+    "input_type": "radio"
   },
   {
     "id": "q3",
@@ -27,8 +25,7 @@
       "Yes",
       "No"
     ],
-    "input_type": "radio",
-    "subquestions": []
+    "input_type": "radio"
   },
   {
     "id": "q4",
@@ -38,7 +35,6 @@
       "No",
       "Unsure"
     ],
-    "class": "level-trigger",
     "input_type": "radio",
     "subquestions": [
       {
@@ -48,15 +44,13 @@
           "Yes",
           "No"
         ],
-        "class": "level-trigger",
         "input_type": "radio",
         "subquestions": [
           {
             "id": "q411",
             "question": "How many?",
             "answer": "",
-            "input_type": "number",
-            "subquestions": []
+            "input_type": "number"
           }
         ]
       },
@@ -67,15 +61,13 @@
           "Yes",
           "No"
         ],
-        "class": "level-trigger",
         "input_type": "radio",
         "subquestions": [
           {
             "id": "q421",
             "question": "How many?",
             "answer": "",
-            "input_type": "number",
-            "subquestions": []
+            "input_type": "number"
           }
         ]
       }
@@ -88,8 +80,7 @@
       "Yes",
       "No"
     ],
-    "input_type": "radio",
-    "subquestions": []
+    "input_type": "radio"
   },
   {
     "id": "q8",
@@ -98,8 +89,7 @@
       "Yes",
       "No"
     ],
-    "input_type": "radio",
-    "subquestions": []
+    "input_type": "radio"
   },
   {
     "id": "q9",
@@ -108,64 +98,55 @@
       "Yes",
       "No"
     ],
-    "input_type": "radio",
-    "subquestions": []
+    "input_type": "radio"
   },
   {
     "id": "q10",
     "question": "What type of backplash are you going to have?",
     "answer": "",
-    "input_type": "check",
-    "subquestions": []
+    "input_type": "check"
   },
   {
     "id": "q61",
     "question": "How many Square Feet?",
     "answer": "",
-    "input_type": "number",
-    "subquestions": []
+    "input_type": "number"
   },
   {
     "id": "q11",
     "question": "What type of countertops are you going to have?",
     "answer": "",
-    "input_type": "check",
-    "subquestions": []
+    "input_type": "check"
   },
   {
     "id": "q61",
     "question": "How many Square Feet?",
     "answer": "",
-    "input_type": "number",
-    "subquestions": []
+    "input_type": "number"
   },
   {
     "id": "q12",
     "question": "Now let's pick out some cabinets. Here are your choices:",
     "answer": "Low Quality RTA Cabinets/Higher Quality RTA Cabinets/Assembled Stock Cabinets/Semi-Custom/High End Custom",
-    "input_type": "check",
-    "subquestions": []
+    "input_type": "check"
   },
   {
     "id": "q13",
     "question": "How tall would you like your upper cabinets to be?",
     "answer": "30inch T Uppers/36inch T Uppers/42inch T Uppers",
-    "input_type": "check",
-    "subquestions": []
+    "input_type": "check"
   },
   {
     "id": "q14",
     "question": "Moldings make a huge difference! What is your style?",
     "answer": "No moldings/Crown molding/Crown molding and light rail/The bells and whistles",
-    "input_type": "radio",
-    "subquestions": []
+    "input_type": "radio"
   },
   {
     "id": "q15",
     "question": "How many linear feet of upper cabinets do you have?",
     "answer": "",
-    "input_type": "number",
-    "subquestions": []
+    "input_type": "number"
   },
   {
     "id": "q16",
@@ -175,15 +156,13 @@
       "A mixture of standard and all drawer bases",
       "Lots of Drawers and pullouts"
     ],
-    "input_type": "radio",
-    "subquestions": []
+    "input_type": "radio"
   },
   {
     "id": "q17",
     "question": "How many linear feet of lower cabinets do you have?",
     "answer": "",
-    "input_type": "number",
-    "subquestions": []
+    "input_type": "number"
   },
   {
     "id": "q18",
@@ -193,21 +172,18 @@
       "wood",
       "framed floor"
     ],
-    "input_type": "radio",
-    "subquestions": []
+    "input_type": "radio"
   },
   {
     "id": "q19",
     "question": "You are almost done! We just need your flooring. What type of flooring would you like? (About ten different options with pictures here)",
     "answer": "",
-    "input_type": "check",
-    "subquestions": []
+    "input_type": "check"
   },
   {
     "id": "q20",
     "question": "How many square feet of flooring are you going to install?",
     "answer": "",
-    "input_type": "number",
-    "subquestions": []
+    "input_type": "number"
   }
 ]
