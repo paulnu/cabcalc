@@ -56,7 +56,7 @@ $(() => {
         $('input[data-subids]').on('click', (e) => {
           let $this = $(e.currentTarget)
           let ids = $this.attr('data-subids')
-          $this.val() === 'Yes' ? $(ids).show() : $(ids).hide()
+          parseInt($this.val()) === 0 ? $(ids).show() : $(ids).hide()
         })
 
         $('#calc').on('click', (e) => {

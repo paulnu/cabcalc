@@ -8,11 +8,11 @@
         <input class="form-check-input"
           type="radio"
           name="radio_{{../id}}"
+          value="{{lookup ../aval @index}}"
           {{#areSubquestions ../this}}
           data-subids="{{#subids this.subquestions}}{{/subids}}"
-          {{/areSubquestions}}
-          value="{{this}}">
-        <label class="form-check-label">{{this}}</label>
+          {{/areSubquestions}}>
+        <label class="form-check-label">{{this}} {{lookup ../aval @index}}</label>
       </div>
       {{/each}}
     </div>
